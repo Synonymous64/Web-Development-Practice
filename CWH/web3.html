@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Effect</title>
+    <style>
+        .text-glow {
+            text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #30CFD0, #c43ad6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        :root {
+            /* violet */
+            --primary-color: 111, 76, 255;
+
+            /* white */
+            --text-color: 256, 256, 256;
+        }
+
+        .btn {
+            font-family: sans-serif;
+            font-size: 18px;
+            padding: 12px 32px;
+            margin: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .btn-glow:hover {
+            box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: rgb(var(--primary-color));
+            border: 1px solid rgb(var(--primary-color));
+            color: rgb(var(--text-color));
+
+        }
+
+        .btn-semi-transparent {
+            background-color: rgba(var(--primary-color), 0.15);
+            border: 1px solid rgba(var(--primary-color), 0.25);
+            color: rgba(var(--text-color), 0.8);
+        }
+
+        .btn-semi-transparent:hover {
+            background-color: rgba(var(--primary-color), 0.35);
+            border: 1px solid rgba(var(--primary-color), 0.5);
+            color: rgba(var(--text-color), 0.9);
+        }
+
+        .btn-gradient {
+            background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+            border: 0;
+            color: rgba(var(--text-color));
+        }
+
+        .btn-gradient-border {
+            color: rgb(var(--text-color));
+            border: 2px double transparent;
+            background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+
+        .card {
+            margin: 1rem;
+            padding: 1rem;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .bg-blur {
+            overflow: hidden;
+        }
+
+        .bg-blur::before {
+            content: '';
+            background-image: var(--bg-image);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .bg-blur::before {
+            filter: blur(30px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-glow">text glow effect</h1>
+    <h1><span class="text-gradient">text gradient effect</span></h1>
+    <h1 class="text-glow">
+        <span class="text-gradient">text gradient</span>
+        with glow effect
+    </h1>
+    <button class="btn">Button</button>
+    <button class="btn btn-glow">Glow on Hover</button>
+    <button class="btn btn-glow btn-primary">Primary Button</button>
+    <button class="btn btn-semi-transparent btn-glow">Semi Transparent Button</button>
+    <button class="btn btn-gradient btn-glow">Gradient Button</button>
+    <button class="btn btn-gradient-border btn-glow">
+        Gradient Border Button
+    </button>
+    <div class="card">
+        <h1>Some text here</h1>
+    </div>
+</body>
+
+</html>

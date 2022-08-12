@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        button{
+            background-color: aqua;
+            padding: 10px;
+            border: 3px solid brown;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 >Events in Javasript</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, fugit ut. Ipsum sed corrupti dolor, explicabo, repellendus obcaecati dolore cupiditate maxime quas quod nihil, incidunt eius? Cupiditate laboriosam sequi quibusdam ullam officia. In, eaque?</p>
+        <ul>
+            <li>Browser Event</li>
+            <li>Click</li>
+            <li>Context Menu</li>
+            <li>mouse over/mouse out</li>
+            <li>mouse down/mouse up</li>
+            <li>mouse move</li>
+            <li>submit</li>
+            <li>focus</li>
+            <li>Dom Content Loaded</li>
+            <li>Transition end</li>
+        </ul>
+        <button id="btn" onclick="togglehide()">Show/Hide</button>
+    </div>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside');
+        })
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse outside');
+        })
+        console.log('Event Listner');
+        function togglehide(){
+            // let btn = document.getElementById('btn');
+            if(para.style.display != 'none'){
+                para.style.display = 'none';  
+            }
+            else para.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

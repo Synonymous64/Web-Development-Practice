@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ~ SET INTERVAL AND SET TIME OUT USING JAVASRIPT</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("HTML ~ SET INTERVAL AND SET TIME OUT USING JAVASRIPT");
+        //! SetTimed out --> Allows us to run a function once after the interval of time
+        //! Cleartimeout --> Allows us to run a function repeatedly after the interval of time 
+        function greet(name, bye){
+            console.log("HELLO THERE! MORNING " + name + " " + bye);
+        }
+        // setTimeout(() => {
+            // greet("Prajwal");
+        // }, 5000); //<--- time
+        // Alternate ways to call the function to setTime out
+        // setTimeout(greet, 5000, "Prajwal", "Bye"); //! do not use the () bracket or any other paraanthesis of the function you have added to the setTimeout greet <--- correct && greet() <--- incorrect
+        // timeOut = setTimeout(greet, 5000, "Prajwal", "Bye")
+        // console.log(timeOut); //! it returns a timeout id 
+        // clearTimeout(timeOut) //! if you don't wanna get the output + you need to run it before the function is printed
+        // timeOut1 = setInterval(greet, 1000, "Prajwal", "bye"); // it will keep running repeatedly
+        // clearInterval(timeOut1);//! if you don't wanna get the output + you need to run it before the function is printed
+        // Funtion to display time
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

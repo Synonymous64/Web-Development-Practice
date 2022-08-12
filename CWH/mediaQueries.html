@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            display: none;
+        }
+        /* //it works like an if-else statment and used to make an designer wesite */
+        /* only screen is used to use only screen type media */
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            #box2{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            #box3{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media only screen and (min-width:800px){
+            #box4{
+                display: block;
+                background-color: rgb(245, 139, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">I have I-phone</div>
+    <div class="box" id="box2">I have Table</div>
+    <div class="box" id="box3">I have Conditioner</div>
+    <div class="box" id="box4">I have Appliances</div>
+</body>
+</html>

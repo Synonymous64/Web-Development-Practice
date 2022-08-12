@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW AND TEXT SHADOW</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 22px 33px;
+        margin: 22px 12px;
+        background-color: aqua;
+        /* it is used to outline and shadowing the box */
+        /* box-shadow:10px 11px cornflowerblue; */
+        /* it will give you the gradient color on radius */
+        /* box-shadow:10px 11px 23px cornflowerblue; */
+
+        /* it is an spread radius */
+        box-shadow:10px 11px 23px 5px cornflowerblue;
+        /* it will stretch color inside the box */
+        box-shadow: inset 3px 4px 6px 7px gray;
+
+        /* it will give you the multiple box-shadows */
+        box-shadow: 3px 4px blue, 9px 8px green;
+    }
+    .card h2{
+        /* text-shadow: 2px 4px gray; */
+        /* the third argument is used for blurring */
+        text-shadow: 2px 4px 19px gray;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is HTML course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae repellat consequuntur ut? Dolores eveniet dolorum, amet nostrum ut vitae dolorem ratione harum doloribus itaque minima quisquam temporibus, laudantium perferendis quas? Molestiae, natus ex.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is CSS course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae repellat consequuntur ut? Dolores eveniet dolorum, amet nostrum ut vitae dolorem ratione harum doloribus itaque minima quisquam temporibus, laudantium perferendis quas? Molestiae, natus ex.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is JavaScript course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae repellat consequuntur ut? Dolores eveniet dolorum, amet nostrum ut vitae dolorem ratione harum doloribus itaque minima quisquam temporibus, laudantium perferendis quas? Molestiae, natus ex.</p>
+        </div>
+    </div>
+</body>
+</html>

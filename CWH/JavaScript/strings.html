@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem, ipsum dolor.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fugiat magni numquam nisi unde ad ipsa blanditiis neque velit, sequi, nostrum laudantium, excepturi fuga.</p>
+    </div>
+    <script>
+        var string = "This";
+        var name = "Prajwal";
+        console.log(string + " is " + name);
+        var company = "Dell";
+        var temp = `${name} is a nice person and he has a laptop of "${company}"`; //! Lateral Literals
+        console.log(temp);
+        console.log(temp.length);
+        document.getElementById('content').innerHTML='<h3>This is heading</h3>'; //!it will innerhtml will insert the value to it
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#mylist {
+    color: grey;
+    font-size: larger;
+    border-style: inset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.definitions {
+    color: rgb(28, 85, 122);
+    font-size: larger;
+    border-style: outset;
+}
+img:hover{
+    box-shadow: 0 0 3px 4px  black;
+    transition: 1s;
+}
+
+body{
+    background-image: url(https://getwallpapers.com/wallpaper/full/f/d/0/1056169-vertical-cute-chemistry-wallpaper-2417x1608.jpg);
+    background-color: blueviolet;
+    background-blend-mode: screen;
+}
+.font{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* img :hover{
+    /* border: 2px solid ; */
+/* border-radius: 8px; */
+/* box-shadow: 0 0 1px 2px rgb(28, 85, 122); */
+/* opacity: 1; */
+/* max */
+/* } */

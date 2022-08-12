@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="contianer">About Arrays and Objects</div>
+    <script>
+        let myvar = 34;
+        let myvar1 = "String";
+        let myvar2 = true;
+        let myvar3 = null;
+        let myvar4 = undefined;
+        //! This is how you can create the object
+        let employee = {
+            name: "Prajwal",
+            college: "Priyaradarshini",
+            year: "2nd year",
+            "Roll no.": 122 
+        }
+        // let names = [1,2,3,"Prajwal"];
+        // Other way to create an array
+        let names = new Array(3,2,1,"Prajwal");
+        console.log(employee);
+        console.log(names);
+        console.log(names.length); // to print the name
+        // console.log(names[0]);
+        console.log(names.sort())
+        names.push("Hello there!"); // it is used to add any value to the array
+        console.log(names);
+        console.log(employee.name); //  you can print the specific object through it
+        console.log(employee['Roll no.']); //  you can print the specific string object
+        // employee.name
+        // 'Prajwal'
+        let names1 = new Array(23);// sizo of array
+        console.log(names1.length);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID : MEDIA QUERIES</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside''footer footer footer footer';
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: pink;
+            }
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar navbar' 'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+           
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: 'navbar navbar navbar navbar' 'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }
+        @media only screen and (min-width:800px){
+            body{
+                background-color: green;
+            }
+          
+        }
+        .border-now{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: aqua;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>about</span>
+            <span>Services</span>
+            <span>contact</span>
+              
+        </nav>
+        <section class="border-now">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus cumque, veniam perferendis minus, inventore assumenda libero, sint quis impedit voluptates. Voluptatibus error minus iure, quidem sit saepe possimus maiores.</p>
+        </section>
+        <aside class="border-now">
+            <h1>
+                more about us
+            </h1>
+        </aside>
+    </div>
+    <footer class="border-now"><i class="fa fa-copyright" aria-hidden="true">Copyright</i> &copy; by Prajwal 2022</footer>
+</body>
+</html>

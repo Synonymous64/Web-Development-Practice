@@ -1,0 +1,18 @@
+#ourfonts{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: blanchedalmond;
+    
+}
+.background{
+    background-image: url(https://as1.ftcdn.net/jpg/01/08/78/52/500_F_108785255_2dbzS8gKp2OAto2CWcUgNhFVQ741LWIE.jpg);
+    
+}
+.forheading{
+    font-size: xx-large;
+    background-color: aqua;
+}
+.para{
+    font-size: large;
+    background-color: aliceblue;
+}

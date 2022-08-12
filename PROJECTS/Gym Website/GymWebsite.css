@@ -1,0 +1,115 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-image: url('img/background.jpg');
+    background-size: 1299px;
+    font-family: 'Shizuru', cursive;
+}
+.left{
+    /* border: 2px solid lawngreen; */
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    margin: 2px auto;
+     
+}
+.mid{
+    /* border: 2px solid brown; */
+    display: block;
+    width: 52%;
+    margin: 0px 222px;
+    top:4px;
+  
+    
+}
+.right{
+    /* border: 2px solid lawngreen; */
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    margin: 2px auto;
+    align-self: center;
+    
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 18px;
+}
+.navbar li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 21px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: rgb(180, 12, 12);
+    
+}
+.left img{
+    width: 89px;
+    border-radius: 90px;
+    margin:0px;   
+    position : relative;
+    top: -10px;
+    border: 10px;
+}
+.left div{
+    text-align: center;
+    margin: -19px 10px;
+}
+.btn{
+    margin: 14px 9px;
+    color: rgb(240, 240, 240);
+    padding :0px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Shizuru', cursive;
+    background-color: transparent;
+    border: 2px solid rgb(212, 190, 190);
+}
+.btn:hover{
+    background-color: grey;
+}
+.left img:hover{
+    background-color: black;
+}
+
+.container{
+    border: 2px solid white;
+    margin: 78px 80px;
+    padding: 12px;
+    width: 78%;
+    border-radius: 30px;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 242px;
+    padding: 8px;
+    border: 3px solid black;
+    margin: 4px auto;
+    border-radius: 16px;
+    font-family: 'Shizuru', cursive;
+}
+.container h1{
+    text-align: center;
+    background-color: grey;
+    width: 510px;
+    margin: 35px 282px;
+}
+.container button {
+    display: block;
+    width: 184px;
+    margin: 18px 439px;
+}
+
+.form-group input:hover{
+    background-color: red;
+}

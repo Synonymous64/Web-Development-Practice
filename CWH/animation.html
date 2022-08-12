@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION AND KEYFRAMES</title>
+    <style>
+        .container{
+            background-color: aqua;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: Praj;
+            animation-name: Praj1;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            /* this will stop animation at the last position */
+            /* animation-fill-mode: forwards; */
+            /* this will stop animation at the first position */
+            animation-fill-mode: alternate;
+            /* first slow then fast */
+            animation-timing-function: ease-in;
+            /* first slow then slow */
+            animation-timing-function: ease-out;
+            /* first slow fast and the slow */
+            animation-timing-function: ease-in-out;
+            /* It will start 3sec late */
+            /* animation-delay: 2s; */
+            /* It will determine the  direction of the animation*/
+            /* animation-direction: reverse; */
+            /* this properties can be set using the shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animaiton-iteration-count animation-fill-mode; */
+            /* animation: praj3 5s ease 1s 12 backwards; */
+        }
+        @keyframes Praj{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+        @keyframes Praj1{
+            0%
+            {
+                top: 0px;
+                left: 0px;
+
+            }
+            20%
+            {
+                top: 200px;
+                left: 1000px; 
+            }
+            40%
+            {
+                top: 200px;
+                left: 80px;
+            }
+            60%
+            {
+                top: 200px;
+                left: 40px;
+            }
+            80%
+            {
+                top: 200px;
+                left: 20px;
+            }
+            100%
+            {
+                top: 200px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+</html>

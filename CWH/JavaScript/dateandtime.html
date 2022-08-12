@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE AND TIME THROUGH JAVASRIPT</title>
+    <style>
+        .container{
+            display: block;
+            font-size: 23px;
+            background-color: antiquewhite;
+            border: 2px solid rosybrown;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <duv class="container">
+        Current Time is <span id="time"></span>
+    </duv>
+    <script>
+        console.log("This is date and time through JavaScript");
+        let now = new Date();
+        console.log(now);
+        let dt = new Date(1000);
+        console.log(dt);
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate);
+        // let newDate = new Date(year, month, date,  hours, minutes, seconds, millisecond);
+        let newDate = new Date(3020, 4, 6, 9,3, 2,34);
+        console.log(newDate);
+        console.log(newDate.getFullYear());
+        console.log(newDate.getHours());
+        console.log(newDate.getMonth());
+        console.log(newDate.getMilliseconds());
+        console.log(newDate.getDay());
+        newDate.setDate(5); // to set date
+        console.log(newDate);
+        newDate.setDate(45); // wrong date changes automatically
+        newDate.setSeconds(45); 
+        console.log(newDate);
+        console.log(Date.now());
+        setInterval(updateTime, 1000);
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+
+    </script>
+</body>
+</html>

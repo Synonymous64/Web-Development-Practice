@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is about loops</title>
+</head>
+<body>
+    <div class="container">
+        <h3>This is about loops in Javascript</h3>
+    </div>
+    <script>
+        console.log("All about loops in JavaScript");
+        // Normal for loop
+        // for(let i = 1; i <= 4; ++i) console.log(i);
+        let friends = ["Prajwal", "Prajwal2", "Prajwal3", "Prajwal4", 4,5,6];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log(friends[index]);
+        // }
+        // For each loop
+        // friends.forEach(function f(element){
+        //     console.log("Hello Friend " + element + " to modern JavaScript");
+        // })
+        // Modern JavaScript loop
+        // for (element of friends){
+        //     console.log("Hello Friend " + element + " to modern JavaScript");
+        // }
+        let employee = {
+            name: "Prajwal",
+            company: "Microsoft",
+            technologies: 'Android Development, Firebase, Web-development, Unreal Engine, Blender, Mashroom',
+            Language: "C/C++, Java, Python, Git/Github",
+            salary: '15LPA'
+        }
+        // traversal of object with modern for loop
+        // for(element in employee){
+            // console.log(`The ${element} of the employee is ${employee[element]}`);
+        // }
+        let i = 0;
+        // while(i < 4){
+        //     console.log(i);
+        //     i++;
+        // }
+        do{
+            console.log(i);
+            i++;
+        }while(i < 4);
+
+    </script>
+</body>
+</html>

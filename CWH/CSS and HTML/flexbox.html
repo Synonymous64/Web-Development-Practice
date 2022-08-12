@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize a container as a flex box */
+            /* by default is row for flex direction */
+            display: flex;
+            /* // it will tranformed to column */
+            flex-direction: column; 
+            /* it will start to originate from reverse */
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            /* flex properties for container.            
+            */
+            /* it will wrap the website making it responsive */
+            flex-wrap: wrap;
+            /* it will  reversely wrap the website making it responsive */
+            flex-wrap: wrap-reverse;
+            /* you can add two different attributes in one box */
+            flex-flow: row-reverse wrap; 
+            /* it will align all content to center */
+            justify-content: center;
+            /* it will align content in the perfect order */
+            justify-content: space-between;
+            /* it will give all object equal distance */
+            justify-content: space-evenly;
+            /* it will give all object equal distance all the side */
+            justify-content: space-around;
+            /* you align into center vertically downwards all the content using alignitems */
+            align-items: flex-end;
+            /* default value */
+            align-items: flex-start;
+            /* you align into center vertically all the content using alignitems */
+             align-items: center;
+
+             align-items: stretch;
+            }
+        .item{
+            background-color: tomato;
+            border: 2px solid rgb(81, 255, 0);
+            width: 200px;
+            height: 200px;
+            padding: 3px;
+            margin: 10px;
+        }
+        #item-1{
+            /* flex properties for a flex items */
+            /* the one with highest order will be in last */
+            /* order: 2; */
+
+            /* it wil take more space the number will define the size of elements */
+            /* flex-grow: 3;  */
+        }
+        #item-2{
+            /* flex-grow: 9; */
+            /* opposite to flex grow, it will more faster */
+            /* flex-shrink: 3; */
+            /* when a flex direction is set to row the flex basis will control the  width  */
+            /* when a flex direction is set to colums the flex-basis: will control the  height */
+            /* flex-basis: 520px;  */
+        }
+        #item-3{
+            /* order: 4; */
+            /* flex: grow shrink basis */
+            /* flex:2 2 244; */
+            /* it will get situated in the flex end of the container*/
+            /* align-self: flex-end; */
+            /* it will get situated in the flex start of the container*/
+            /* align-self: flex-start; */
+            /* it will get situated in the flex end of the container*/
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Box</h1>
+    <div class="container">
+            <div class="item" id="item-1">First box</div>
+            <div class="item" id="item-2">Second box</div>
+            <div class="item" id="item-3">Third box</div>
+             <!-- <div class="item" id="item-4">Fourth box</div>
+            <div class="item" id="item-5">Fifth box</div>
+            <div class="item" id="item-6">Sixth box</div>   -->
+    </div> 
+</body>
+</html>

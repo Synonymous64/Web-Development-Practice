@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigation Menu</title>
+    <style>
+        .navbar {
+
+            /* border: 2px solid blue; */
+            background-color: rgb(0, 0, 0);
+            border: 8px solid blue;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+
+            /* this will remove all the list style */
+            list-style-type: none;
+            margin: 3px 3px;
+        }
+
+        .navbar li a {
+            padding: 3px 19px;
+            text-decoration: none;
+            color: azure;
+        }
+
+        .navbar li a:hover {
+
+            color: rgb(17, 230, 230);
+
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 2px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 29px;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!-- * Placeholder is used to highlight the text 54 -->
+
+<body>
+    <header>
+        <!-- it defines the set of navigation keys -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <div class="search">
+                    <input type="search" name="text" id="search" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

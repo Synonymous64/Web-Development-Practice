@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON ~ TUTORIAL</title>
+</head>
+<body>
+    <div class="container">
+        About JSON File in HTML
+    </div>
+    <script>
+        let jsonObj = {
+            name : "Prajwal",
+            "mid name" : "Vilas",
+            sirname : "Urkude",
+            food : "Chola Bhatura"
+        }
+        console.log(jsonObj);
+        let myJson = JSON.stringify(jsonObj); // converted ti string
+        console.log(myJson.replace("Chola Bhatura", "Bhindi")); // replaced
+        newJsonobj = JSON.parse(myJson);
+        console.log(newJsonobj); // converted back to object
+    </script>
+</body>
+</html>

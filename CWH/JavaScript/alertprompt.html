@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, comfirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Application of Alert , Prompt and confirm from the javascript</h1>
+    </div>
+    <script>
+        console.log("Application of Alert , Prompt and confirm from the javascript");
+        //! Alert text box pops up
+        // alert("This is a message");
+
+        //! Prompt text box pops up (ok, cancel)
+        // let name = prompt("Enter name", "name here"); // placeholder after the comma
+        // console.log(name); // prompt returns the value
+        // ! To confirm all the details
+        // let p = confirm("Are you sure?");
+        // console.log(p);
+        let confirmed = prompt("Enter you age ..!", "age here");
+        if(confirmed > 18)console.log("You are eligible to access the site"); 
+        else console.log("You are restricted to access the site");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1{
+            background-color: rebeccapurple;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* the greater than operator for direct child if there p inside the div tag just after it, it will get applied  */
+        div > p{              
+            color: rgb(251, 172, 0);
+            font: bold;
+        }
+        /* the add operator is used when there's a div tag before p tag */
+        div + p{
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>More about selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is an another paragraph inside list</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is a pargraph</p>
+        </div>
+        <p>This is an another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

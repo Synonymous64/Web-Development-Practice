@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid : Grid Layouts </title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 6px;
+            /* grid-template-columns: repeat(4, 114px);
+            justify-content: center; */
+            /* it will work as a matrix */
+            /* here navbar will take space for size of of below section section section aside */
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside''footer footer footer footer';
+            /* and the below line will designate the position of section section will have space of three columns and aside will have space of one column */
+        }
+        .item{
+            background-color: yellow;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home about contact us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et cumque asperiores quis quia, dolores veniam natus itaque doloribus aperiam quas, accusamus, distinctio eos possimus eligendi libero sapiente mollitia cum. Lorem i ducimus quasi sint repudiandae expedita excepturi possimus voluptatibus, maiores vero fugit facere dolorem, uo sequi, magni ullam eum id incidunt alias hic. Provident maiores aliquo doloremque! Iste nesciunt, assumenda velit animi, distinctio sapiente sint porro, atque illo minima voluptatem omnis nulla.</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam, minima quis o quia recusandae dignissimos. Itaque repellat cumque rem voluptate reiciendis. Voluptas eos molestiae eligendi iure commodi explicabo magnam fugiat quos voluptatem, eveniet quam? Omniptatum minima fugiat eligendi officia reiciendis, magnam, aut, obcaecati necessitatibus. Veniam labore a exercitationem vero saepe aspernatur suscipit maiores inventore fugit perspiciatis fugiat nostrum, placeat magni nobis aliquid rerum. Velit blanditiis expedita repellendus rerum!</div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div> -->
+    </div>
+    <footer class="item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste optio omnis a!
+    </footer>
+</body>
+</html>
